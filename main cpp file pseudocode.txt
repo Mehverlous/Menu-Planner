@@ -1,0 +1,86 @@
+main cpp file pseudocode
+
+START
+    main fuction{
+
+        Create an array of mealObjects menu
+
+        if menuFile does not exist 
+            then create menuFile
+
+        if menuFile !empty{
+            for each meal object in menuFile
+                add mealObject to the menu array
+        }
+
+        Print prompt "Welcome to the Menu Planner"
+
+        while flag has not been set {
+            Print prompt "Please Enter a number to select an option 
+            1. Add a menu item 
+            2. Remove a menu item 
+            3. Display menu for the week 
+            4. Display meal for the day 
+            5. Delete menu for the week"
+            6. Close the Menu Planner Application
+
+            Take the input from the user
+
+            if 1
+                then send the user to the addMenuItem function
+            else if 2
+                then send the user to the removeMenuItem funtion 
+            else if 3
+                then send the user to the displayMenu funtion 
+            else if 4
+                then send the user to the displayDailyMeal function 
+            else if 5
+                then send the user to the deleteMenu fuction 
+            else if 6
+                then set the flag to exit the menu planner 
+            else Print prompt "User entered an invalid response"
+            
+        }
+
+        Print prompt "Thank you for using the Menu Planner"
+    }
+
+    function addMenuItem (arg title, arg ingredients list, arg preparation steps, arg mealType, arg day){
+        create menuObject using arguments 
+        add menuObject to menu array
+        update menuFile
+    }
+
+    function removeMenuItem (arg index){
+        Print prompt "Enter the index of the menu item you would like to remove"
+        delete menu Item from index that the user enters 
+        update menuFile
+    }
+
+    function displayMenu (){
+        if menuFile is !empty 
+            while menuFile is !empty print menuObject
+        else 
+            Print prompt "No menu items in the menuFile"
+    }
+
+    fuction displayDailyMeal (arg day, arg mealType){
+        if day and mealType correspond to a mealObject 
+            return mealObject 
+        else 
+            Print prompt "Meal you entered does not exist in the Menu"
+    }
+
+    function deleteMenu (){
+        wipe menuFile
+    }
+
+END
+
+menu object pseudocode
+
+START
+
+    create menuObject based on the arguments entered  by the user
+
+END 
