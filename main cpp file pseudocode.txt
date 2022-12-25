@@ -5,6 +5,9 @@ START
 
         Create an array of mealObjects menu
 
+        //since c++ file works using file objects here you would create a file object to
+        //check if your file has been created
+
         if menuFile does not exist 
             then create menuFile
 

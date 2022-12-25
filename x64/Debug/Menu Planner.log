@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\david\Documents\Extra Curricular Work\Programming Projects (non-academic)\C++ Tutorials\Menu Planner\main.cpp(35,13): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+  Menu Planner.vcxproj -> C:\Users\david\Documents\Extra Curricular Work\Programming Projects (non-academic)\C++ Tutorials\Menu Planner\x64\Debug\Menu Planner.exe
